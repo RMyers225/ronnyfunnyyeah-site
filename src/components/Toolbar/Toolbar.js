@@ -9,7 +9,7 @@ const toolbar = props => (
     <header className="toolbar">
         <nav className="toolbar__nav">
             <div>
-                <DrawerToggleButton />
+                <DrawerToggleButton click={props.drawerClickHandler} />
             </div>
             <div className="toolbar_logo"><a href="/">The LOGO</a></div>
             <div className="spacer" />
@@ -17,7 +17,7 @@ const toolbar = props => (
                 <ul>
                     <li><a href="/">Shows</a></li>
                     <li><a href="/">Videos</a></li>
-                    <li><a href="/">Album</a></li>
+                    <li><a href="/">Albums</a></li>
                 </ul>
             </div>
         </nav>
